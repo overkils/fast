@@ -624,6 +624,10 @@ body {
         max-width: 1038px;
     }
 
+    .logo {
+        width: 50%;
+    }
+
     .header__top { 
         display: flex;
         position: relative;
