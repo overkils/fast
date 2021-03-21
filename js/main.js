@@ -10,6 +10,12 @@ $(function(){
     infinite: true,
     slidesToShow: 1,
     });
+
+    $('.team__slider-items').slick({
+        arrows: true,
+        infinite: true,
+        slidesToShow: 1,
+    });
 });
 $('.burger-btn').on('click', function(){
         $(this).toggleClass('burger-btn_active');
