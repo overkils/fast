@@ -156,6 +156,7 @@ body {
     justify-content: center;
     align-items: center;
     margin-bottom: 48px;
+    text-transform: uppercase;
 }
 
 .tutorial__form {
@@ -163,7 +164,6 @@ body {
     justify-content: space-between;
     align-items: center;
     min-width: 284px;
-    max-height: 42px;
 }
 
 .tutorial__input {
@@ -175,10 +175,7 @@ body {
     text-indent: 20px;
     padding-right: 96px;
     transition: border-color 0.3s;
-    display: block;
-}
-
-.tutorial__input:not(:last-child) {
+    display: inline-block;
     margin-right: 26px;
 }
 
@@ -690,11 +687,64 @@ body {
         transform: rotate(41deg)translatey(-25px);
     }
 
-    .about__text {
-        display: flex;
-        text-align: start;
+    .about__content {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
+    .about__text {
+        display: flex;
+        text-align: center;
+        margin-bottom: 45px;
+    }
+
+    .tutorial__title {
+        max-width: 280px;
+        padding-bottom: 36px;
+    }
+
+    .tutorial__form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .tutorial__input {
+        margin-bottom: 36px;
+        margin-right: 0 ;
+    }
+
+    .tutorial__btn {
+        max-width: 314px;
+        padding-top: 14px;
+        padding-bottom: 14px;
+    }
+
+    .facts__items {
+        display: none;
+    }
+
+    .facts__slider {
+        display: block;
+    }
+
+    .slick-initialized .slick-slide {
+        display: flex;
+    }
+
+    .facts__slider-item {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        max-width: 254px;
+    }
+
+    .facts__slider-text {
+        max-width: 254px;
+    }
 }
 
 @media screen and (max-width: 768px) {
