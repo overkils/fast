@@ -610,8 +610,8 @@ body {
     }
 
     .btn {
-        width: 100%;
-    }
+        width: 75%;
+    }    
 
     .about__title {
         margin-left: auto;
@@ -809,12 +809,14 @@ body {
     }
 
     .tabcontent {
+        padding: 26px 21px;
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
 
     .tabcontent__btn {
+        width: 100%;
         font-size: 18px;
         padding: 11px 26px;
     }
