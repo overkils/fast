@@ -596,8 +596,8 @@ body {
     }
 
     .header__title {
-        max-width: 100%;
         margin: 0 auto;
+        font-size: 30px;
     }
 
     .header__title span {
@@ -619,6 +619,11 @@ body {
 }
 
 @media screen and (max-width: 1038px) {
+
+    .container {
+        max-width: 1038px;
+    }
+
     .header__top { 
         display: flex;
         position: relative;
@@ -630,6 +635,7 @@ body {
     }
 
     .logo--center {
+        width: 50%;
         display: block;
         position: absolute;
     }
