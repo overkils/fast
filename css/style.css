@@ -816,6 +816,7 @@ body {
 
     .tabcontent__btn {
         font-size: 18px;
+        padding: 11px 26px;
     }
 
     .tab__items {
