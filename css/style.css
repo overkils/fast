@@ -624,10 +624,6 @@ body {
         max-width: 1038px;
     }
 
-    .logo--center {
-        width: 50%;
-    }
-
     .header__top { 
         display: flex;
         position: relative;
@@ -667,7 +663,7 @@ body {
         bottom: 0;
         z-index: 100;
         display: flex;
-        padding: 100px 20px;
+        padding: 100% 20px;
         display: flex !important;
         flex-direction: column !important;
         align-items: center !important;
@@ -684,7 +680,7 @@ body {
     .burger-menu__item-link {
         display: block;
         min-width: 100%;
-        padding: 40px 0;
+        padding: 200px 0;
         font-size: 22px;
     }
 
