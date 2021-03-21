@@ -728,6 +728,10 @@ body {
 
     .facts__slider {
         display: block;
+        max-width: 314px;
+        margin-right: auto;
+        margin-left: auto;
+        padding: 0 36px;
     }
 
     .slick-initialized .slick-slide {
@@ -740,6 +744,7 @@ body {
         align-items: center;
         justify-content: center;
         max-width: 254px;
+        margin-right: ;
     }
 
     .facts__slider-text {
