@@ -610,7 +610,7 @@ body {
     }
 
     .btn {
-        width: 75%;
+        width: auto;
     }    
 
     .about__title {
@@ -816,7 +816,7 @@ body {
     }
 
     .tabcontent__btn {
-        width: 100%;
+        width: auto;
         font-size: 18px;
         padding: 11px 26px;
     }
