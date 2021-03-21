@@ -14,6 +14,7 @@ body {
 .btn {
     font-size: 24px;
     background-color: #FEDE00;
+    color: #000;
     border: none;
     width: 372px;
     height: 56px;
@@ -106,6 +107,10 @@ body {
     font-weight: 400;
     font-size: 24px;
     color: #FEDE00;
+}
+
+.header__btn {
+    padding: 14px 43px;
 }
 
 .header__btn:hover {
@@ -363,7 +368,7 @@ body {
     max-width: 352px;
     padding: 17px 50px;
     color: #fff;
-    font-size: 24px;
+    font-size: 20px;
     transition: background-color 0.5s, color 0.3s;
 }
 
@@ -635,7 +640,6 @@ body {
     }
 
     .logo--center {
-        width: 50%;
         display: block;
         position: absolute;
     }
@@ -895,5 +899,11 @@ body {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .logo--center {
+        width: 50%;
     }
 }
