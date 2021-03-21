@@ -340,6 +340,16 @@ body {
     margin-bottom: 28px;
 }
 
+.tab__items {
+    display: flex;
+    flex-direction: column;
+}
+
+.tabcontent--inner {
+    display: flex;
+}
+
+
 .tabcontent__text {
     max-width: 474px;
     font-size: 16px;
@@ -380,6 +390,10 @@ body {
 .slider__items {
     margin: 0 auto;
     padding: 0 36px;
+}
+
+.slider__items-inner {
+    display: none;
 }
 
 .slider__item {
@@ -465,6 +479,10 @@ body {
 .team__items {
     display: flex;
     justify-content: space-between;
+}
+
+.team__slider-items {
+    display: none;
 }
 
 .team__item {
@@ -751,6 +769,125 @@ body {
 
     .facts__slider-text {
         max-width: 254px;
+    }
+
+    .aboutus__title {
+        max-width: 300px;
+    }
+
+    .aboutus__items {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .aboutus__item {
+        margin-bottom: 58px;
+    }
+
+    .ages__title {
+        max-width: 290px;
+    }
+
+    .tabs {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tabs__btn {
+        margin-bottom: 20px;
+    }
+
+    .tabcontent {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .tab__items {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tabcontent--inner {
+        flex-direction: column;
+        margin-bottom: 35px;
+    }
+
+    .slider__items {
+        display: none;
+    }
+
+    .slider__items-inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .slider__item {
+        margin-bottom: 23px;
+    }
+
+    .slider__link {
+        margin-right: 0;
+    }
+
+    .team__items {
+        display: none;
+    }
+
+    .team__slider-items {
+        display: block;
+        max-width: 350px;
+        padding: 0 24px;
+        margin: 0 auto;
+    }
+
+    .team__text {
+        max-width: 265px;
+    }
+
+    .team__item {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .doc__title {
+        max-width: 330px;
+        padding-bottom: 19px;
+        font-size: 20px;
+    }
+
+    .applications__title {
+        max-width: 278px;
+    }
+
+    .applications__subtitle {
+        max-width: 278px;
+        font-size: 12px;
+    }
+
+    .footer__logo {
+        display: block;
+        margin-right: 0;
+        padding-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .footer--inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer__items {
+        width: 250px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
     }
 }
 
