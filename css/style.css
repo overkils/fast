@@ -612,11 +612,12 @@ body {
     }
 
     .btn {
-        width: 305px;
+        width: auto;
     }
     
     .header__btn {
-        font-size: 20px;
+        font-size: 14px;
+        padding: 8px 12px;   
     }
 
     .about__title {
