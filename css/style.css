@@ -636,6 +636,10 @@ body {
         max-width: 1038px;
     }
 
+    .title {
+        font-size: 30px;
+    }
+
     .header__top { 
         display: flex;
         position: relative;
