@@ -496,20 +496,24 @@ body {
     padding-top: 64px;
     padding-bottom: 172px;
     background-color: #1c1c1c;
-    position: relative;
 }
 
 .footer--inner {
+    width: 100%;
     display: flex;
     align-items: flex-start;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
-.footer__logo {
-    margin-right: 130px;
+.map {
+    width: 400px;
+    height: 400px;
 }
 
 .footer__items {
     max-width: 404px;
+    margin-bottom: 50px;
 }
 
 .footer__item {
@@ -672,11 +676,6 @@ body {
         margin-bottom: 45px;
     }
 
-    .tutorial__title {
-        max-width: 280px;
-        padding-bottom: 36px;
-    }
-
     .applications__form {
         display: flex;
         flex-direction: column;
@@ -724,20 +723,6 @@ body {
 
     .facts__slider-text {
         max-width: 254px;
-    }
-
-    .aboutus__title {
-        max-width: 300px;
-    }
-
-    .aboutus__items {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .aboutus__item {
-        margin-bottom: 58px;
     }
 
     .ages__title {
@@ -795,32 +780,6 @@ body {
 
     .slider__link {
         margin-right: 0;
-    }
-
-    .team__items {
-        display: none;
-    }
-
-    .team__slider-items {
-        display: block;
-        max-width: 350px;
-        padding: 0 24px;
-        margin: 0 auto;
-    }
-
-    .team__text {
-        max-width: 265px;
-    }
-
-    .team__item {
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-
-    .doc__title {
-        max-width: 330px;
-        padding-bottom: 19px;
-        font-size: 20px;
     }
 
     .applications__title {
