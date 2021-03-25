@@ -37,13 +37,10 @@
                                 <a class="burger-menu__item-link" href="#ages">Этапи</a>
                             </li>
                             <li class="burger-menu__item">
-                                <a class="burger-menu__item-link" href="#slider">Каталог</a>
+                                <a class="burger-menu__item-link" href="#slider">Стиль</a>
                             </li>
                             <li class="burger-menu__item">
                                 <a class="burger-menu__item-link" href="#doc">Контакти</a>
-                            </li>
-                            <li class="burger-menu__item">
-                                <a class="burger-menu__item-link" href="#team">Выдгуки</a>
                             </li>
                         </ul>
                     </nav>
@@ -68,7 +65,7 @@
                 </div>
                 <h1 class="header__title">
                     Проєктування житлових будинків з індивідуальним підходом «під ключ»
-                    <span>Авторський супровід архітектора та 3D візуалізація</span>
+                    <span>Реалізація об'єктів будь-якої складності з попередньою роботою архітектора і 3D ВізуалізаціЄю</span>
                 </h1>
                 <a href="#tutorial" class="btn header__btn" >Отримати пропозицію</a>
             </div>
@@ -82,25 +79,115 @@
                                 Про нас
                             </h2>
                             <div class="about__text">
-                                <p>Наша місія популяризувати технологію енерго-зберігаючого будівництва в Україні та надати людям можливість користуватись усіма її перевагами, шляхом правильного та технологічного виконання та дотри-мання технології. Допомогати людям зводити житло в якому їм буде жити комфортно та економити кошти на його утриманні.</p>
+                                <p>Процес Проєктування з індивідуальним підходом - це творчий пошук, його результатом Стає проєкт ВАШОГО БУДИНКУ, який об'єднуЄ наше бачення і професійний досвід з уявленням і бажанням замовника.</p>
                             </div>
                         </div>
                         <img src="image/home__vector.png" alt="Вектор дома">
                     </div>
                 </div>
             </section>
-            <section class="tutorial" id="tutorial">
+            <section class="slider" id="slider">
                 <div class="container">
-                    <h2 class="title tutorial__title">Потрібна консультація?</h2>
-                    <div class="tutorial__subtitle">
-                        <p>Менеджер відповість на всі запитання</p>
+                    <h2 class="title slider__title">Каталог проєктів</h2>
+                    <div class="slider__text">
+                        <p>Сучасні стилі, в яких працюють наші архітектори</p>
                     </div>
-                    <form action="index.php" method="POST" class="tutorial__form" >
-                        <input type="text" name="name" class="tutorial__input" placeholder="Ваше Ім’я" required>
-                        <input type="tel" name="tel" class="tutorial__input" placeholder="Номер телефону" required>
-                        <button name="submit" class="btn tutorial__btn">Отримати пропозицію</button>
-                    </form>
+                        <ul class="slider__items">
+                            <li class="slider__item">
+                                <img class="slider__img" src="image/slider1.jpg" alt="картинка">
+                                <a href="#" class="slider__link"></a>
+                                <Span style="position:absolute">Модерн</span>
+                            </li>
+                            <li class="slider__item">
+                                <img class="slider__img" src="image/slider2.jpg" alt="картинка">
+                                <a href="#" class="slider__link"></a>
+                                <Span style="position:absolute">хай-тек</span>
+                            </li>
+                            <li class="slider__item">
+                                <img class="slider__img" src="image/slider3.jpg" alt="картинка">
+                                <a href="#" class="slider__link"></a>
+                                <Span style="position:absolute">класичний</span>
+                            </li>
+                            <li class="slider__item">
+                                <img class="slider__img" src="image/slider4.jpg" alt="картинка">
+                                <a href="#" class="slider__link"></a>
+                                <Span style="position:absolute">Барнхаус</span>
+                            </li>
+                        </ul>
+                        <ul class="slider__items-inner">
+                            <li class="slider__item">
+                                <img class="slider__img" src="image/slider1.jpg" alt="картинка">
+                                <a href="#" class="slider__link"></a>
+                                <Span style="position:absolute">Модерн</span>
+                            </li>
+                            <li class="slider__item">
+                                <img class="slider__img" src="image/slider2.jpg" alt="картинка">
+                                <a href="#" class="slider__link"></a>
+                                <Span style="position:absolute">хай-тек</span>
+                            </li>
+                            <li class="slider__item">
+                                <img class="slider__img" src="image/slider3.jpg" alt="картинка">
+                                <a href="#" class="slider__link"></a>
+                                <Span style="position:absolute">класичний</span>
+                            </li>
+                            <li class="slider__item">
+                                <img class="slider__img" src="image/slider4.jpg" alt="картинка">
+                                <a href="#" class="slider__link"></a>
+                                <Span style="position:absolute">Барнхаус</span>
+                            </li>
+                        </ul>
                 </div>
+            </section>
+            <section class="ages" id="ages">
+                <div class="container">
+                    <h2 class="title ages__title">Етапи проєктування</h2>
+                    <div class="tabs">
+                        <button class="tabs__btn" onclick="openCity(event, 'sketch')" id="openDeafault">Эскизный проект</button>
+                        <button class="tabs__btn" onclick="openCity(event, 'project')">Робочий проєкт</button>
+                        <button class="tabs__btn" onclick="openCity(event, 'engporject')">проєкт інженерних мереж</button>
+                    </div>
+                    <div id="sketch" class="tabcontent" style="display: flex;">
+                        <div class="tab__items">
+                            <div class="tabcontent--inner">
+                                <div class="tabcontent--inner1">
+                                    <h3 class="tabcontent__title">Эскизный проект</h3>
+                                    <div class="tabcontent__text">
+                                        <p>Процес проектування з індивідуальним підходом - це творчій пошук, його результатом стає проєкт, який обїеднує наше бачення і професійний досвід з уявленням і бажанням замовника.</p>
+                                    </div>
+                                </div>
+                                <img src="image/tabs__img.png" alt="картинка">
+                            </div>
+                            <a class="btn tabcontent__btn" href="#doc">Отримати пропозицію</a>
+                        </div>
+                    </div>
+                    <div id="project" class="tabcontent" style="display: none;">
+                        <div class="tab__items">
+                            <div class="tabcontent--inner">
+                                <div class="tabcontent--inner1">
+                                    <h3 class="tabcontent__title">Робочий проект</h3>
+                                    <div class="tabcontent__text">
+                                        <p>Розробляємо архітектурно-будівельні креслення, включаючи конструкції будівлі: такі як фундамент, перекриття та конструкції покрівлі, а також необхідні вузли та деталі.</p>
+                                    </div>
+                                </div>
+                                <img src="image/tabs__img.png" alt="картинка">
+                            </div>
+                            <a class="tabcontent__btn" href="#doc">Отримати пропозицію</a>
+                        </div>
+                    </div>
+                    <div id="engporject" class="tabcontent" style="display: none;">
+                        <div class="tab__items">
+                            <div class="tabcontent--inner">
+                                <div class="tabcontent--inner1">
+                                    <h3 class="tabcontent__title">проект інженерних мереж</h3>
+                                    <div class="tabcontent__text">
+                                        <p>На основі робочого проєкту розробляємо проєкт електрики, слабкострумових мереж, опалення, водопостачання, каналізації, вентиляції і кондиціонування.</p>
+                                    </div>
+                                </div>
+                                <img src="image/tabs__img.png" alt="картинка">
+                            </div>
+                            <a class="tabcontent__btn" href="#doc">Отримати пропозицію</a>
+                        </div>
+                    </div>
             </section>
             <section class="facts" id="facts">
                 <div class="container">
@@ -112,49 +199,49 @@
                             <li class="facts__item">
                                 <img class="facts__icon" src="image/icon1.jpg" alt="иконка">
                                 <div class="facts__text">
-                                    <p>Професійний<br> досвід 17 років</p>
+                                    <p>17 років в проектуванні житлових будинків</p>
                                 </div>
                             </li>
                             <li class="facts__item">
                                 <img class="facts__icon" src="image/icon2.jpg" alt="иконка">
                                 <div class="facts__text">
-                                    <p>Відповідаемо санітарним, конструктивним і екологічним вимогам стандартів</p>
+                                    <p>ми команда сертифікованих спеціалістів</p>
                                 </div>
                             </li>
                             <li class="facts__item">
                                 <img class="facts__icon" src="image/icon3.jpg" alt="иконка">
                                 <div class="facts__text">
-                                    <p>Авторський нагляд<br> за будівництвом</p>
+                                    <p>контроль відповідності будівельних умов проєкту, Виїжаємо на Об’єкт і контролюємо</p>
                                 </div>
                             </li>
                             <li class="facts__item">
                                 <img class="facts__icon" src="image/icon4.jpg" alt="иконка">
                                 <div class="facts__text">
-                                    <p>Консультування та юридичний супровід<br> на всіх стадіях реалізації</p>
+                                    <p>Консультування та юридичний супровід навсіх стадіях реалізації</p>
                                 </div>
                             </li>
                             <li class="facts__item">
                                 <img class="facts__icon" src="image/icon5.jpg" alt="иконка">
                                 <div class="facts__text">
-                                    <p>3D візуалізація<br> майбутнього об’экту</p>
+                                    <p>3D візуалізація майбутнього ОбЄкту</p>
                                 </div>
                             </li>
                             <li class="facts__item">
                                 <img class="facts__icon" src="image/icon6.jpg" alt="иконка">
                                 <div class="facts__text">
-                                    <p>Готовий проект та<br> дозвільна документація<br> від 1,5 місяця</p>
+                                    <p>Готовий проекта та дозвільна документація до 1,5 місяця</p>
                                 </div>
                             </li>
                             <li class="facts__item">
                                 <img class="facts__icon" src="image/icon7.jpg" alt="иконка">
                                 <div class="facts__text">
-                                    <p> індивідуальниий<br> підхід до кожного<br> кліента</p>
+                                    <p>індивідуальний підхід до кожного кліЄнта, сПІВПРАЦЯ З НАМИ ЕКОНОМИТЬ ВАШ ЧАС</p>
                                 </div>
                             </li>
                             <li class="facts__item">
                                 <img class="facts__icon" src="image/icon8.jpg" alt="иконка">
                                 <div class="facts__text">
-                                    <p>Відповідаемо санітарним, конструктивним і екологічним вимогам стандартів</p>
+                                    <p>ми слідкуємо за новими світовими тенденціями в галузі «Архітектура»</p>
                                 </div>
                             </li>
                         </ul>
@@ -162,49 +249,49 @@
                             <li class="facts__slider-item">
                                 <img class="facts__icon" src="image/icon1.jpg" alt="иконка">
                                 <div class="facts__slider-text">
-                                    <p>Професійний<br> досвід 17 років</p>
+                                    <p>17 років в проектуванні житлових будинків</p>
                                 </div>
                             </li>
                             <li class="facts__slider-item">
                                 <img class="facts__icon" src="image/icon2.jpg" alt="иконка">
                                 <div class="facts__slider-text">
-                                    <p>Відповідаемо санітарним, конструктивним і екологічним вимогам стандартів</p>
+                                    <p>ми команда сертифікованих спеціалістів</p>
                                 </div>
                             </li>
                             <li class="facts__slider-item">
                                 <img class="facts__icon" src="image/icon3.jpg" alt="иконка">
                                 <div class="facts__slider-text">
-                                    <p>Авторський нагляд<br> за будівництвом</p>
+                                    <p>контроль відповідності будівельних умов проєкту, Виїжаємо на Об’єкт і контролюємо</p>
                                 </div>
                             </li>
                             <li class="facts__slider-item">
                                 <img class="facts__icon" src="image/icon4.jpg" alt="иконка">
                                 <div class="facts__slider-text">
-                                    <p>Консультування та юридичний супровід<br> на всіх стадіях реалізації</p>
+                                    <p>Консультування та юридичний супровід навсіх стадіях реалізації</p>
                                 </div>
                             </li>
                             <li class="facts__slider-item">
                                 <img class="facts__icon" src="image/icon5.jpg" alt="иконка">
                                 <div class="facts__slider-text">
-                                    <p>3D візуалізація<br> майбутнього об’экту</p>
+                                    <p>3D візуалізація майбутнього ОбЄкту</p>
                                 </div>
                             </li>
                             <li class="facts__slider-item">
                                 <img class="facts__icon" src="image/icon6.jpg" alt="иконка">
                                 <div class="facts__slider-text">
-                                    <p>Готовий проект та<br> дозвільна документація<br> від 1,5 місяця</p>
+                                    <p>Готовий проекта та дозвільна документація до 1,5 місяця</p>
                                 </div>
                             </li>
                             <li class="facts__slider-item">
                                 <img class="facts__icon" src="image/icon7.jpg" alt="иконка">
                                 <div class="facts__slider-text">
-                                    <p> індивідуальниий<br> підхід до кожного<br> кліента</p>
+                                    <p>індивідуальний підхід до кожного кліЄнта, сПІВПРАЦЯ З НАМИ ЕКОНОМИТЬ ВАШ ЧАС</p>
                                 </div>
                             </li>
                             <li class="facts__slider-item">
                                 <img class="facts__icon" src="image/icon8.jpg" alt="иконка">
                                 <div class="facts__slider-text">
-                                    <p>Відповідаемо санітарним, конструктивним і екологічним вимогам стандартів</p>
+                                    <p>ми слідкуємо за новими світовими тенденціями в галузі «Архітектура»</p>
                                 </div>
                             </li>
                         </ul>
@@ -244,189 +331,21 @@
                     </div>
                 </div>
             </section>
-            <section class="ages" id="ages">
-                <div class="container">
-                    <h2 class="title ages__title">Етапи проєктування</h2>
-                    <div class="tabs">
-                        <button class="tabs__btn" onclick="openCity(event, 'sketch')" id="openDeafault">Эскизный проект</button>
-                        <button class="tabs__btn" onclick="openCity(event, 'project')">Архитектурный проект</button>
-                        <button class="tabs__btn" onclick="openCity(event, 'engporject')">Инженерный проект</button>
-                    </div>
-                    <div id="sketch" class="tabcontent" style="display: flex;">
-                        <div class="tab__items">
-                            <div class="tabcontent--inner">
-                                <div class="tabcontent--inner1">
-                                    <h3 class="tabcontent__title">Эскизный проект</h3>
-                                    <div class="tabcontent__text">
-                                        <p>Наша місія популяризувати технологію енерго - зберігаючого будівництва в Україні та надати
-                                            людям можливість користуватись усіма її перевагами, шляхом правильного та технологічного виконання
-                                            та
-                                            дотри
-                                            - мання технології. Допомогати людям зводити житло в якому їм буде жити комфортно та економити кошти
-                                            на
-                                            його
-                                            утриманні.</p>
-                                    </div>
-                                </div>
-                                <img src="image/tabs__img.png" alt="картинка">
-                            </div>
-                            <a class="btn tabcontent__btn" href="#doc">Отримати пропозицію</a>
-                        </div>
-                    </div>
-                    <div id="project" class="tabcontent" style="display: none;">
-                        <div class="tab__items">
-                            <div class="tabcontent--inner">
-                                <div class="tabcontent--inner1">
-                                    <h3 class="tabcontent__title">Эскизный проект</h3>
-                                    <div class="tabcontent__text">
-                                        <p>Наша місія популяризувати технологію енерго - зберігаючого будівництва в Україні та надати
-                                            людям можливість користуватись усіма її перевагами, шляхом правильного та технологічного виконання
-                                            та
-                                            дотри
-                                            - мання технології. Допомогати людям зводити житло в якому їм буде жити комфортно та економити кошти
-                                            на
-                                            його
-                                            утриманні.</p>
-                                    </div>
-                                </div>
-                                <img src="image/tabs__img.png" alt="картинка">
-                            </div>
-                            <a class="tabcontent__btn" href="#doc">Отримати пропозицію</a>
-                        </div>
-                    </div>
-                    <div id="engporject" class="tabcontent" style="display: none;">
-                        <div class="tab__items">
-                            <div class="tabcontent--inner">
-                                <div class="tabcontent--inner1">
-                                    <h3 class="tabcontent__title">Эскизный проект</h3>
-                                    <div class="tabcontent__text">
-                                        <p>Наша місія популяризувати технологію енерго - зберігаючого будівництва в Україні та надати
-                                            людям можливість користуватись усіма її перевагами, шляхом правильного та технологічного виконання та
-                                            дотри
-                                            - мання технології. Допомогати людям зводити житло в якому їм буде жити комфортно та економити кошти на
-                                            його
-                                            утриманні.</p>
-                                    </div>
-                                </div>
-                                <img src="image/tabs__img.png" alt="картинка">
-                            </div>
-                            <a class="tabcontent__btn" href="#doc">Отримати пропозицію</a>
-                        </div>
-                    </div>
-            </section>
-            <section class="slider" id="slider">
-                <div class="container">
-                    <h2 class="title slider__title">Каталог проєктів</h2>
-                    <ul class="slider__items">
-                        <li class="slider__item">
-                                <img class="slider__img" src="image/slider1.jpg" alt="картинка">
-                                <a href="#" class="slider__link"></a>
-                                <Span style="position:absolute">Модерн</span>
-                            </li>
-                        <li class="slider__item">
-                            <img class="slider__img" src="image/slider2.jpg" alt="картинка">
-                            <a href="#" class="slider__link"></a>
-                            <Span style="position:absolute">класичний</span>
-                        </li>
-                        <li class="slider__item">
-                            <img class="slider__img" src="image/slider2.jpg" alt="картинка">
-                            <a href="#" class="slider__link"></a>
-                            <Span style="position:absolute">класичний</span>
-                        </li>
-                    </ul>
-                    <ul class="slider__items-inner">
-                        <li class="slider__item" >
-                            <img class="slider__img" src="image/slider1.jpg" alt="картинка">
-                            <a href="#" class="slider__link"></a>
-                            <Span style="position:absolute">Модерн</span>
-                        </li>
-                        <li class="slider__item" >
-                            <img class="slider__img" src="image/slider2.jpg" alt="картинка">
-                            <a href="#" class="slider__link"></a>
-                            <Span style="position:absolute">класичний</span>
-                        </li>
-                        <li class="slider__item">
-                            <img class="slider__img" src="image/slider2.jpg" alt="картинка">
-                            <a href="#" class="slider__link"></a>
-                            <Span style="position:absolute">класичний</span>
-                        </li>
-                    </ul>
-                </div>
-            </section>
-            <section class="doc" id="doc">
-                <div class="container">
-                    <h2 class="title doc__title">Отримайте проєкт та погоджену документацію за 55 днів!</h2>
-                    <div class="tutorial__subtitle">
-                        <p>Менеджер відповість на всі запитання</p>
-                    </div>
-                    <form action="index.php" method="POST" class="tutorial__form" id="doc__tel">
-                        <input type="text" name="name" class="tutorial__input" placeholder="Ваше Ім’я" required>
-                        <input type="tel" name="tel" class="tutorial__input" placeholder="Номер телефону" required>
-                        <button name="submit" class="btn tutorial__btn">Отримати пропозицію</button>
-                    </form>
-                </div>
-            </section>
-            <section class="team" id="team">
-                <div class="container">
-                    <h2 class="title team__title">
-                        Відгуки про роботу з нами
-                    </h2>
-                    <div class="team--inner">
-                        <ul class="team__items">
-                            <li class="team__item">
-                                <img src="image/team1.jpg" alt="портреты" class="team__img">
-                                <span class="team__name">Валерія</span>
-                                <div class="team__text">
-                                    <p>Однa из лидиpyющиx тopгoвыx ceтeй в Уkpaинe. Бpeнд вышeл нa pынok 25 лeт нaзaд. Зa этo вpemя нaшa komaндa oтkpылa 228 cyпepmapkeтoв «Фokcтpoт» пo вceй Уkpaинe и ycпeлa coздaть moщный, быcтpo paбoтaющий интepнeт-maгaзин. </p>
-                                </div>
-                            </li>
-                            <li class="team__item">
-                                <img src="image/team2.jpg" alt="портреты" class="team__img">
-                                <span class="team__name">Антон</span>
-                                <div class="team__text">
-                                    <p>Добрый день. Хотелось поблагодарить Александра, сотрудника компании за оперативность и профессионализм. 7 января вечером заказал на сайте кофеварку перезвонил Александр, подтвердил заказ и проконсультировал о товаре. </p>
-                                </div>
-                            </li>
-                        </ul>
-                        <ul class="team__slider-items">
-                            <li class="team__item">
-                                <img src="image/team1.jpg" alt="портреты" class="team__img">
-                                <span class="team__name">Валерія</span>
-                                <div class="team__text">
-                                    <p>Однa из лидиpyющиx тopгoвыx ceтeй в Уkpaинe. Бpeнд вышeл нa pынok 25 лeт нaзaд. Зa этo вpemя нaшa komaндa
-                                        oтkpылa 228 cyпepmapkeтoв «Фokcтpoт» пo вceй Уkpaинe и ycпeлa coздaть moщный, быcтpo paбoтaющий
-                                        интepнeт-maгaзин. </p>
-                                </div>
-                            </li>
-                            <li class="team__item">
-                                <img src="image/team2.jpg" alt="портреты" class="team__img">
-                                <span class="team__name">Антон</span>
-                                <div class="team__text">
-                                    <p>Добрый день. Хотелось поблагодарить Александра, сотрудника компании за оперативность и профессионализм. 7
-                                        января вечером заказал на сайте кофеварку перезвонил Александр, подтвердил заказ и проконсультировал о
-                                        товаре. </p>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
             <section class="applications" id="applications">
                 <div class="container">
-                    <h2 class="title applications__title">Зворотній зв’язок</h2>
-                    <div class="tutorial__subtitle applications__subtitle">
-                        <p>Залишилися питання - задайте їх через форму нижче</p>
+                    <h2 class="title applications__title">Хочете дізнатися більше?</h2>
+                    <div class="applications__subtitle">
+                        <p>Залишіть заявку і ми вам передзвонимо!</p>
                     </div>
-                    <form action="index.html" method="POST" class="tutorial__form">
-                        <input type="text" name="name" class="tutorial__input app__input" placeholder="Ваше Ім’я" required>
-                        <input type="tel" name="tel" class="tutorial__input app__input" placeholder="Номер телефону" required>
-                        <button name="submit" class="btn tutorial__btn">Отримати пропозицію</button>
+                    <form action="index.html" method="POST" class="applications__form">
+                        <input type="text" name="name" class="app__input" placeholder="Ваше Ім’я" required>
+                        <input type="tel" name="tel" class="app__input" placeholder="Номер телефону" required>
+                        <button name="submit" class="btn applications__btn">Отримати пропозицію</button>
                     </form>
                 </div>
             </section>
         </main>
         <footer class="footer" id="footer">
-            <img src="image/footer__home1.png" alt="Изображение" class="footer__img">
             <div class="container">
                 <div class="footer--inner">
                     <img src="image/logo.svg" alt="Лого" class="logo footer__logo">
