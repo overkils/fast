@@ -576,7 +576,8 @@ body {
 
     .header__top { 
         display: flex;
-        height: 100vh;
+        min-height: 142px;
+        max-height: 142px;
         justify-content: center;
     }
 
