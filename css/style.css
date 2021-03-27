@@ -613,7 +613,7 @@ body {
         bottom: 0;
         z-index: 100;
         display: flex;
-        padding: 50% 20px;
+        padding: 100% 20px;
         display: flex !important;
         flex-direction: column !important;
         align-items: center !important;
