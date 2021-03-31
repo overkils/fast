@@ -506,9 +506,19 @@ body {
     justify-content: space-around;
     flex-wrap: wrap;
 }
+.tel {
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.tel:hover {
+    transform: scale(1.1);
+}
 
 .map {
-    width: 400px;
+    width: 100%;
     height: 400px;
 }
 
@@ -528,7 +538,6 @@ body {
 .footer__item--flex {
     display: flex;
     align-items: center;
-    justify-content: center;
 }
 
 .footer__icon {
